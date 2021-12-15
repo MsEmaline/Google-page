@@ -7,27 +7,46 @@ html {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
-    grid-template-areas: "";
+    grid-template-areas:
+    "about store . gmail images menu sign-in";
 
 }
 
+a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 
 #about {
-    grid-area: about;
-}
-#store {
-    grid-area: store;
-}
-#gmail {
-    grid-area: gmail;
-}
-#images {
-    grid-area: gmail;
-}
-#menu {
-    grid-area: menu;
+    grid-area: about; 
+    justify-self: center;
+    align-self: center;
+} 
+#store { 
+    grid-area: store; 
+    justify-self: center;
+    align-self: center;
+} 
+#gmail { 
+    grid-area: gmail; 
+    justify-self: center;
+    align-self: center;
+} 
+#images { 
+    grid-area: images ;
+    justify-self: center;
+    align-self: center;
+} 
+#menu { 
+    grid-area: menu; 
+    justify-self: center;
+    align-self: center;
 }
 
 #sign-in {
     grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
 }
